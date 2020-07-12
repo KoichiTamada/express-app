@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2><%= title %></h2>
+    <p><%= content %></p>
+    <table>
+      <% for(var key in data){ %>
+        <%- include('table',{key:key,val:data[key]})%>
+      <% } %>
+    </table>
+    <p>
+      <a href="/">Index</a><br>
+      <a href="/other">Other</a>
+    </p>
+  </body>
+</html>

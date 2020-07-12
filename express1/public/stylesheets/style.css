@@ -1,8 +1,22 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+h1{
+  font-size: 68pt;
+  color: rgb(136, 136, 240);
+  text-align: center;
 }
-
-a {
-  color: #00B7FF;
+h2{
+  font-size: 48pt;
+  color: rgb(136, 136, 240);
+  text-align: center;
+}
+p{
+  font-size: 14pt;
+  color: rgb(16, 46, 92);
+}
+table tr th{
+  background-color: rgb(129, 155, 160) ;
+  color: blue;
+}
+table tr td{
+  background-color: rgb(235, 238, 241) ;
+  color: blueviolet;
 }
