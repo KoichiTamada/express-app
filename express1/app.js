@@ -15,6 +15,8 @@ var session_opt={
 var index = require('./routes/index');
 var other = require('./routes/other');
 var hello = require('./routes/hello');
+var ajax  = require('./routes/ajax');
+
 
 var app = express();
 
@@ -33,6 +35,7 @@ app.use(session(session_opt));
 app.use('/', index);
 app.use('/other', other);
 app.use('/hello',hello);
+app.use('/ajax',ajax);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

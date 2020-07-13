@@ -3,6 +3,8 @@ var router = express.Router();
 
 //GET
 router.get('/', (req, res, next)=> {
+  var ard = req.query.name;
+  console.log(ard);
   var msg='何か書いて送信して下さい。';
   if(req.session.message != undefined){
     msg='Last Message:' + req.session.message;
@@ -16,7 +18,6 @@ router.get('/', (req, res, next)=> {
 
 //POST
 router.post('/',(req,res,next)=>{
-  console.log('post完了！');
   var msg = req.body['message'];
   req.session.message = msg;
   var data={
